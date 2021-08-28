@@ -1,0 +1,36 @@
+<div class="detail-container">
+  <div class="btn-container">
+    <button class="back-button" (click)="backClick()"><<</button>
+  </div>
+
+  <div class="head-container">
+    <h2>{{id}}</h2>
+  </div>
+
+  <div>
+    <img class="image" [src]="picture" alt="picture">
+  </div>
+
+  <div class="information">
+
+    <div class="key">ID:</div>
+    <div class="value">{{submittedid}}</div>
+
+    <div class="key">Active:</div>
+    <div class="value">{{submittedactive}}</div>
+
+    <div class="key">Profile ID:</div>
+    <div class="value">{{submittedprofileid}}</div>
+
+    <div class="key">Age:</div>
+    <div class="value">{{age}}</div>
+
+    <div class="key">Role:</div>
+    <div class="value">{{role}}</div>
+
+    <div class="key">Team:</div>
+    <div class="value">{{team}}</div>
+
+  </div>
+
+</div>

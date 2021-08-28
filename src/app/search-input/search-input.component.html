@@ -1,0 +1,19 @@
+<div class="search-container">
+  <form class="search-form" #form="ngForm">
+    <input
+      class="search-input"
+      name="search"
+      type="text"
+      ngModel
+      placeholder="Search Player..."
+      autocomplete="off"
+      [(ngModel)]="searchText"
+    />
+    <button class="submit-button" (click)="onSubmit(searchText)">Search</button>
+  </form>
+
+  <div class="error" *ngIf="errorFlag == true">
+    <h2>Player Not Available!</h2>
+  </div>
+</div>
+
